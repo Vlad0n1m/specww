@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
     <title>DELADOM - Главная</title>
 </head>
 
@@ -12,9 +14,9 @@
     <header class="header-container">
         <nav class="header-content">
             <div class="logo-container">
-                <a href="/"><img src="./icons/logo.svg" alt="logo-image" class="logo"></a>
+                <a href="/"><img src="{% static "icons/logo.svg" %}"alt="logo-image" class="logo"></a>
                 <div class="location">
-                    <img src="./icons/location.svg" alt="location-icon">
+                    <img src="{% static "icons/location.svg" %}"alt="location-icon">
                     <p>Москва</p>
                 </div>
             </div>
@@ -25,23 +27,23 @@
             <div class="auth-container">
                 <a href="/register.html" class="register">Регистрация</a>
                 <div class="login-wrapper">
-                    <img src="./icons/login.svg" alt="login-icon" class="login-icon"> <a href="/login.html"
+                    <img src="{% static "icons/login.svg" %}"alt="login-icon" class="login-icon"> <a href="/login.html"
                         class="login">Войти</a>
                 </div>
-                <div class="burger"><img src="./icons/burger.svg" alt="бургер"></div>
-                <div class="cross"><img src="./icons/cross.svg" alt="крестик"></div>
+                <div class="burger"><img src="{% static "icons/burger.svg" %}"alt="бургер"></div>
+                <div class="cross"><img src="{% static "icons/cross.svg" %}"alt="крестик"></div>
             </div>
         </nav>
     </header>
     <div class="shadow"></div>
     <div class="off-screen-menu">
         <nav class="nav-links">
-            <a href="#" class="logo"><img src="./icons/logo.svg" alt="logo"></a> <a href="/create-order.html"
+            <a href="#" class="logo"><img src="{% static "icons/logo.svg" %}"alt="logo"></a> <a href="/create-order.html"
                 class="nav-link">Создать заказ</a> <a href="/all-orders.html" class="nav-link">Все заказы</a> <a
                 href="/masters.html" class="nav-link">Все мастера</a> <a href="/register.html"
                 class="nav-link">Регистрация</a>
             <!-- <div class="login-wrapper">
-                <img src="./icons/login.svg" alt="login-icon" class="login-icon"> <a href="/login.html"
+                <img src="{% static "icons/login.svg" %}"alt="login-icon" class="login-icon"> <a href="/login.html"
                     class="login">Войти</a>
             </div> -->
         </nav>
@@ -56,10 +58,10 @@
                 <form class="hero-form">
                     <input type="text" class="hero-input" placeholder="Специалист или услуга"> <button
                         class="hero-input-btn" type="submit">НАЙТИ</button> <button class="hero-input-icon"
-                        type="submit"><img src="./icons/lupa.svg" alt="lupa"></button>
+                        type="submit"><img src="{% static "icons/lupa.svg" %}"alt="lupa"></button>
                 </form>
             </div>
-        </section><img src="./images/woman-mobile.webp" alt="woman" class="woman-mobile">
+        </section><img src="{% static "images/woman-mobile.webp" %}" alt="woman" class="woman-mobile">
     </main>
     <div class="container" id="how-it-work">
         <div class="content">
@@ -67,22 +69,22 @@
             <div class="cards">
                 <div class="double-card">
                     <div class="card">
-                        <img class="icon" src="./icons/how1.svg" alt="Заказчик создает заказ">
+                        <img class="icon" src="{% static "icons/how1.svg" %}"alt="Заказчик создает заказ">
                         <p class="card-text">Заказчик создает заказ</p><a href="/login.html" class="link">Войти как заказчик</a>
                     </div>
                     <div class="card">
-                        <img class="icon" src="./icons/how2.svg" alt="Мастера подают заявки на выполнение заказа">
+                        <img class="icon" src="{% static "icons/how2.svg" %}"alt="Мастера подают заявки на выполнение заказа">
                         <p class="card-text">Мастера подают заявки на выполнение заказа</p><a href="/login.html"
                             class="link">Войти как мастер</a>
                     </div>
                 </div>
                 <div class="double-card">
                     <div class="card">
-                        <img class="icon" src="./icons/how3.svg" alt="Заказчик выбирает мастера">
+                        <img class="icon" src="{% static "icons/how3.svg" %}"alt="Заказчик выбирает мастера">
                         <p class="card-text">Заказчик выбирает мастера</p>
                     </div>
                     <div class="card">
-                        <img class="icon" src="./icons/how4.svg" alt="Мастер выполняет работу и получает оплату">
+                        <img class="icon" src="{% static "icons/how4.svg" %}"alt="Мастер выполняет работу и получает оплату">
                         <p class="card-text">Мастер выполняет работу и получает оплату</p>
                     </div>
                 </div>
@@ -122,7 +124,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +153,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +221,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -248,7 +250,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -277,7 +279,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -309,7 +311,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -329,7 +331,7 @@
                         <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                     </div>
                     <div class="two-links">
-                        <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                        <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                     </div>
                 </div>
             </div>
@@ -365,7 +367,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -403,7 +405,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -435,7 +437,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -464,7 +466,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -496,7 +498,7 @@
                             <a class="tab-link" href="#">Музыка</a> <a class="tab-link" href="#">Французский язык</a>
                         </div>
                         <div class="two-links">
-                            <a class="link" href="#">Все 1817 предметов <img src="./icons/arrow.svg" alt="arrow"></a>
+                            <a class="link" href="#">Все 1817 предметов <img src="{% static "icons/arrow.svg" %}"alt="arrow"></a>
                         </div>
                     </div>
                 </div>
@@ -523,21 +525,21 @@
             <div class="slider">
                 <div class="slide">
                     <div class="info">
-                        <img src="./images/avatar.webp" alt="Иван Иванов" class="avatar">
+                        <img src="{% static "images/avatar.webp" %}" alt="Иван Иванов" class="avatar">
                         <div class="info-text">
                             <h2 class="name">Иван Иванов</h2>
                             <div class="rating">
                                 <div class="stars">
-                                    <img src="./icons/star.svg" alt="Звезды">
+                                    <img src="{% static "icons/star.svg" %}"alt="Звезды">
                                     <p>4,98</p>
                                 </div>
                                 <div class="reviews">
-                                    <img src="./icons/review.svg" alt="Отзывы">
+                                    <img src="{% static "icons/review.svg" %}"alt="Отзывы">
                                     <p>15 отзывов</p>
                                 </div>
                             </div>
                             <div class="pasport-checked">
-                                <img src="./icons/checked.svg" alt="Галочка">
+                                <img src="{% static "icons/checked.svg" %}"alt="Галочка">
                                 <p>Паспорт проверен</p>
                             </div>
                         </div>
@@ -552,21 +554,21 @@
                 </div>
                 <div class="slide">
                     <div class="info">
-                        <img src="./images/avatar.webp" alt="Иван Иванов" class="avatar">
+                        <img src="{% static "images/avatar.webp" %}" alt="Иван Иванов" class="avatar">
                         <div class="info-text">
                             <h2 class="name">Иван Иванов</h2>
                             <div class="rating">
                                 <div class="stars">
-                                    <img src="./icons/star.svg" alt="Звезды">
+                                    <img src="{% static "icons/star.svg" %}"alt="Звезды">
                                     <p>4,98</p>
                                 </div>
                                 <div class="reviews">
-                                    <img src="./icons/review.svg" alt="Отзывы">
+                                    <img src="{% static "icons/review.svg" %}"alt="Отзывы">
                                     <p>15 отзывов</p>
                                 </div>
                             </div>
                             <div class="pasport-checked">
-                                <img src="./icons/checked.svg" alt="Галочка">
+                                <img src="{% static "icons/checked.svg" %}"alt="Галочка">
                                 <p>Паспорт проверен</p>
                             </div>
                         </div>
@@ -581,21 +583,21 @@
                 </div>
                 <div class="slide">
                     <div class="info">
-                        <img src="./images/avatar.webp" alt="Иван Иванов" class="avatar">
+                        <img src="{% static "images/avatar.webp" %}" alt="Иван Иванов" class="avatar">
                         <div class="info-text">
                             <h2 class="name">Иван Иванов</h2>
                             <div class="rating">
                                 <div class="stars">
-                                    <img src="./icons/star.svg" alt="Звезды">
+                                    <img src="{% static "icons/star.svg" %}"alt="Звезды">
                                     <p>4,98</p>
                                 </div>
                                 <div class="reviews">
-                                    <img src="./icons/review.svg" alt="Отзывы">
+                                    <img src="{% static "icons/review.svg" %}"alt="Отзывы">
                                     <p>15 отзывов</p>
                                 </div>
                             </div>
                             <div class="pasport-checked">
-                                <img src="./icons/checked.svg" alt="Галочка">
+                                <img src="{% static "icons/checked.svg" %}"alt="Галочка">
                                 <p>Паспорт проверен</p>
                             </div>
                         </div>
@@ -614,16 +616,16 @@
     <div class="container" id="app-download">
         <div class="content">
             <div class="app-download">
-                <img src="./images/phone.webp" alt="приложение" class="app-image">
+                <img src="{% static "images/phone.webp" %}" alt="приложение" class="app-image">
                 <div class="text-block">
                     <h2 class="app-title">Скачайте наше<br>
                         приложение</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua</p>
                     <div class="links">
-                        <a href="#"><img src="./images/appstore.webp" alt="appstore"></a> <a href="#"><img
-                                src="./images/googleplay.webp" alt="googleplay"></a> <a href="#"><img
-                                src="./images/rustore.webp" alt="rustore"></a>
+                        <a href="#"><img src="{% static "images/appstore.webp" %}" alt="appstore"></a> <a href="#"><img
+                                src="{% static "images/googleplay.webp" %}" alt="googleplay"></a> <a href="#"><img
+                                src="{% static "images/rustore.webp" %}" alt="rustore"></a>
                     </div>
                 </div>
             </div>
@@ -677,11 +679,11 @@
                     <a class="link" href="#">+7 438 438 4384</a>
                     <div class="socials">
                         
-                        <a href="/"><img src="./icons/vk-icon.svg" alt="vk"></a>
-                        <a href="/"><img src="./icons/ok-icon.svg" alt="ok"></a>
-                        <a href="/"><img src="./icons/inst.svg" alt="instagram"></a>
-                        <a href="/"><img src="./icons/wp.svg" alt="vk"></a>
-                        <a href="/"><img src="./icons/tg.svg" alt="vk"></a>
+                        <a href="/"><img src="{% static "icons/vk-icon.svg" %}"alt="vk"></a>
+                        <a href="/"><img src="{% static "icons/ok-icon.svg" %}"alt="ok"></a>
+                        <a href="/"><img src="{% static "icons/inst.svg" %}"alt="instagram"></a>
+                        <a href="/"><img src="{% static "icons/wp.svg" %}"alt="vk"></a>
+                        <a href="/"><img src="{% static "icons/tg.svg" %}"alt="vk"></a>
 
                     </div>
                 </div>
@@ -691,11 +693,11 @@
                 <p class="link">© Все права защищены</p><a class="link" href="#">Политика конфиденциальности</a>
             </div>
         </div>
-    </div><button class="return-to-top" onclick="topFunction()" id="topBtn"><img src="./icons/arrow-top.svg"
+    </div><button class="return-to-top" onclick="topFunction()" id="topBtn"><img src="{% static "icons/arrow-top.svg" %}"
             alt="arrow-top"></button>
-    <script src="./js/main.js"></script>
-    <script src="./js/return-to-top.js"></script>
-    <script src="./js/tabs.js"></script> 
+    <script src="{% static "js/main.js" %}"></script>
+    <script src="{% static "js/return-to-top.js"%}"></script>
+    <script src="{% static "js/tabs.js"%}"></script> 
 </body>
 
 </html>
