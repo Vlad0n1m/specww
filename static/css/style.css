@@ -65,7 +65,7 @@ body {
     text-decoration: none !important;
 }
 .breadcrumbs :last-child {
-    color: #2E41F4 !important;
+    color: #8a6a7b !important;
     
 }
 #footer {
@@ -88,7 +88,7 @@ button {
     --text-color-secondary: #2F2F2F;
     --text-color-primary: #000000;
     --text-color-gray: #939393;
-    --accent-color: #2E41F4;
+    --accent-color: #8a6a7b;
     --background-color-main: #F5F5F5;
     --background-color-light-blue: #EFEFFF;
     --background-color-dark: #242430;
@@ -175,11 +175,8 @@ html {
     gap: 40px;
     align-items: center;
 }
-
-img.logo {
-    width: 130px;
-    height: 30px;
-    margin: 0px 0 12px 0;
+.logo-container img.logo {
+      height: 70px;
 }
 
 .location {
@@ -1056,7 +1053,7 @@ button#orderFilters {
 }
 
 .filter-panel {
-    background-color: white;
+    background-color: #ffc3db;
     max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease-out;
@@ -1694,7 +1691,7 @@ p.master-detail-pasport-approved {
 
 #login button {
     border-radius: 35px;
-    background: #2E41F4;
+    background: #8a6a7b;
     width: 100%;
     padding: 18px 0;
     display: flex;
@@ -2110,7 +2107,7 @@ p.master-detail-pasport-approved {
 }
 
 #lk section.final-price h3.price {
-    color: #2E41F4;
+    color: #8a6a7b;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -2134,7 +2131,7 @@ p.master-detail-pasport-approved {
 }
 
 #create-order section.final-price h3.price {
-    color: #2E41F4;
+    color: #8a6a7b;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -2227,7 +2224,7 @@ p.master-detail-pasport-approved {
 
 #lk .sidebar p.active {
     font-weight: 700;
-    color: #2E41F4;
+    color: #8a6a7b;
 }
 
 #lk .blocks {
@@ -2379,7 +2376,7 @@ td {
     border: 1px solid #F42E2E;
 }
 
-#lk .btn-white-square {
+#lk .btn-#ffc3db-square {
     cursor: pointer;
     text-align: center;
     border-radius: 10px;
@@ -2400,7 +2397,7 @@ td {
     justify-content: start;
 }
 
-#lk .btn-white-square.active {
+#lk .btn-#ffc3db-square.active {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -2920,7 +2917,7 @@ select#anket-select {
 
 .popup .blue-btn {
     border-radius: 35px;
-    background: #2E41F4;
+    background: #8a6a7b;
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -2932,7 +2929,7 @@ select#anket-select {
 
 .blue-btn {
     border-radius: 35px;
-    background: #2E41F4;
+    background: #8a6a7b;
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -3038,14 +3035,14 @@ input#message-text-input {
 }
 
 #error-page .big {
-    color: #2E41F4;
+    color: #8a6a7b;
     font-size: 116px;
     font-weight: 700;
 }
 
 #error-page .blue-btn {
     border-radius: 35px;
-    background: #2E41F4;
+    background: #8a6a7b;
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -3085,6 +3082,23 @@ input#message-text-input {
     width: 100%;
 }
 
+.navbar-user-container {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.navbar-user-container img {
+    width: 50px;
+    border-radius: 100px;
+}
+.navbar-user-container:hover {
+    background: #fafafa;
+
+}
 
 @media (max-width: 1200px) {
     #services .page-select {
@@ -3145,7 +3159,7 @@ input#message-text-input {
         flex-direction: row;
     }
 
-    #lk #my-order .btn-white-square {
+    #lk #my-order .btn-#ffc3db-square {
         width: 100%;
         font-size: 16px;
     }
@@ -3973,6 +3987,9 @@ input#message-text-input {
 }
 
 @media (max-width: 380px) {
+.navbar-user-container p {
+    display: none;
+}
     .breadcrumbs {
         display: none;
     }
