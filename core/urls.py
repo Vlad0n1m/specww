@@ -14,4 +14,4 @@ urlpatterns = [
     
     # path('chat/', views.chat, name='update_profile')
     
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static('/home/django/womtask/specww/static', document_root=settings.STATIC_ROOT)
